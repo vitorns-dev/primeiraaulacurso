@@ -26,7 +26,7 @@ if (hora < 12) {
 if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
     const titulo = document.querySelector("h1");
     if (titulo) {
-        titulo.textContent = saudacao + " Seja bem-vindo ao meu portfólio";
+        titulo.textContent = saudacao + " Seja bem-vindo ao meu portfólio!";
     }
 }
 

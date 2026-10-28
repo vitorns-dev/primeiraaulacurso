@@ -417,6 +417,14 @@ footer p,
     color: #5c677d;
 }
 
+#resposta {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.erro {
+    color: #ff0000;
+}
 
 /* =========================================================
    --- RESPONSIVIDADE (MOBILE) ---
