@@ -476,15 +476,16 @@ footer p,
 }
 
 /* =========================================================
-   --- FOTO DE PERFIL ---
+   --- FOTO DE PERFIL (AVATAR) ---
    ========================================================= */
 .foto-perfil {
     width: 110px;
     height: 110px;
     object-fit: cover;
-    border-radius: 50%; /* Deixa a foto perfeitamente redonda (estilo avatar) */
-    border: 3px solid #00f5d4; /* Borda com a cor de destaque do teu tema */
-    margin-bottom: 24px; /* Pula um espaço excelente antes do primeiro cartão */
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    border: 3px solid #00f5d4; /* Borda com a cor de destaque do tema */
+    margin-top: 16px;    /* Afasta a imagem do H1 que está acima */
+    margin-bottom: 24px; /* Afasta a imagem do cartão "Quem sou eu" abaixo */
     box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
     display: block;
 }
