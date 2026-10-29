@@ -72,3 +72,14 @@ if (botao) {
         atualizarBotao(eClaro);
     });
 }
+
+const gostos = ["Programar", "Assistir séries", "Jogar", "Ouvir música", "Rock", "Danças", "Violino", "Guitarra", "Bateria", "Espaguete", "Lasanha", "Animes", "Desenhos", "Spider"];
+console.log(gostos.lenght);
+console.log(gostos[0]);
+const lista = document.querySelector("#gostos");
+
+for (const gosto of gostos) {
+    const item = document.createElement("li");
+    item.textContent = gosto;
+    lista.appendChild(item);
+}
