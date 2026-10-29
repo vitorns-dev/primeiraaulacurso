@@ -99,9 +99,11 @@ h1 {
     transition: color 0.3s ease;
 }
 
+
 /* Subtítulos (H2) */
 h2 {
     color: #a259ff;
+    margin-bottom: 15px; /* Cria um espaço perfeito para o texto ou lista abaixo não colarem */
     transition: color 0.3s ease;
 }
 
@@ -471,4 +473,18 @@ footer p,
     .projetos {
         grid-template-columns: 1fr;
     }
+}
+
+/* =========================================================
+   --- FOTO DE PERFIL ---
+   ========================================================= */
+.foto-perfil {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda (estilo avatar) */
+    border: 3px solid #00f5d4; /* Borda com a cor de destaque do teu tema */
+    margin-bottom: 24px; /* Pula um espaço excelente antes do primeiro cartão */
+    box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
+    display: block;
 }
