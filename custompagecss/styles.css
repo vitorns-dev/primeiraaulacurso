@@ -435,6 +435,30 @@ footer p,
 }
 
 /* =========================================================
+   --- FOTO DE PERFIL (AVATAR) COM CORES PERSONALIZADAS ---
+   ========================================================= */
+.foto-perfil {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    margin-top: 16px;    /* Afasta a imagem do H1 acima */
+    margin-bottom: 24px; /* Afasta a imagem do cartão abaixo */
+    display: block;
+    
+    /* TEMA ESCURO: Azul Escuro / Royal Blue vibrante (#2563eb) */
+    border: 3px solid #2563eb; 
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* TEMA CLARO: Roxo/Violeta sofisticado (#7c3aed) para contrastar perfeitamente */
+html.claro .foto-perfil {
+    border: 3px solid #7c3aed; 
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* =========================================================
    --- RESPONSIVIDADE (MOBILE) ---
    ========================================================= */
 
@@ -479,29 +503,4 @@ footer p,
     .projetos {
         grid-template-columns: 1fr;
     }
-}
-
-/* =========================================================
-   --- FOTO DE PERFIL (AVATAR) COM CORES DINÂMICAS ---
-   ========================================================= */
-.foto-perfil {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
-    margin-top: 16px;    /* Afasta a imagem do H1 acima */
-    margin-bottom: 24px; /* Afasta a imagem do cartão abaixo */
-    display: block;
-    
-    /* Cor da borda para o TEMA ESCURO (Padrão): Laranja/Âmbar vibrante */
-    border: 3px solid #ff9f1c; 
-    box-shadow: 0 4px 15px rgba(255, 159, 28, 0.3);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Cor da borda personalizada para o TEMA CLARO */
-html.claro .foto-perfil {
-    /* Cor da borda para o TEMA CLARO: Azul Royal elegante */
-    border: 3px solid #3a86ff; 
-    box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
 }
