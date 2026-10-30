@@ -99,6 +99,12 @@ h1 {
     transition: color 0.3s ease;
 }
 
+/* =========================================================
+   --- ESPAÇAMENTO DO TÍTULO PRINCIPAL (H1) ---
+   ========================================================= */
+main h1 {
+    margin-bottom: 24px; /* Cria um espaço perfeito para o título não colar nos cartões */
+}
 
 /* Subtítulos (H2) */
 h2 {
@@ -476,16 +482,26 @@ footer p,
 }
 
 /* =========================================================
-   --- FOTO DE PERFIL (AVATAR) ---
+   --- FOTO DE PERFIL (AVATAR) COM CORES DINÂMICAS ---
    ========================================================= */
 .foto-perfil {
     width: 110px;
     height: 110px;
     object-fit: cover;
     border-radius: 50%; /* Deixa a foto perfeitamente redonda */
-    border: 3px solid #00f5d4; /* Borda com a cor de destaque do tema */
-    margin-top: 16px;    /* Afasta a imagem do H1 que está acima */
-    margin-bottom: 24px; /* Afasta a imagem do cartão "Quem sou eu" abaixo */
-    box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
+    margin-top: 16px;    /* Afasta a imagem do H1 acima */
+    margin-bottom: 24px; /* Afasta a imagem do cartão abaixo */
     display: block;
+    
+    /* Cor da borda para o TEMA ESCURO (Padrão): Laranja/Âmbar vibrante */
+    border: 3px solid #ff9f1c; 
+    box-shadow: 0 4px 15px rgba(255, 159, 28, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cor da borda personalizada para o TEMA CLARO */
+html.claro .foto-perfil {
+    /* Cor da borda para o TEMA CLARO: Azul Royal elegante */
+    border: 3px solid #3a86ff; 
+    box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
 }
