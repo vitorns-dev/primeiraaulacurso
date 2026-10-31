@@ -464,7 +464,7 @@ html.claro .foto-perfil {
 .card h2 {
     display: flex;
     align-items: center;
-    gap: 12px; /* Espaço elegante entre o ícone e o título do projeto */
+    gap: 12px;
 }
 
 .projeto-icone {
@@ -476,7 +476,7 @@ html.claro .foto-perfil {
     border-radius: 8px;
     flex-shrink: 0;
     
-    /* Tema Escuro (Padrão): Fundo subtil em azul com ícone azul brilhante */
+    /* Tema Escuro (Padrão): Azul moderno */
     background: rgba(37, 99, 235, 0.12);
     color: #2563eb;
     transition: background 0.3s ease, color 0.3s ease;
@@ -492,7 +492,7 @@ html.claro .foto-perfil {
     stroke-linejoin: round;
 }
 
-/* Tema Claro: Ajuste automático para o fundo e cor dos ícones */
+/* Tema Claro: Roxo sofisticado */
 html.claro .projeto-icone {
     background: rgba(124, 58, 237, 0.12);
     color: #7c3aed;
